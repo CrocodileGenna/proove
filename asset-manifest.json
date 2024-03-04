@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/proove/static/js/main.33f9b018.js",
+    "static/media/proove_orion_3.png": "/proove/static/media/proove_orion_3.ed542e639f6cf0f4bd6f.png",
+    "index.html": "/proove/index.html",
+    "main.33f9b018.js.map": "/proove/static/js/main.33f9b018.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.33f9b018.js"
+  ]
+}
