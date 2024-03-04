@@ -1,17 +1,12 @@
-import { useState } from 'react';
 import { GlobalStyle } from './App.styled';
-import { FormaSearch } from './image_finder/FormaSearch';
-import { ImagesInfo } from './image_finder/ImagesInfo';
+import { Header } from './proove/Header/Header';
+import { Hero } from './proove/Hero/Hero';
 
 export const App = () => {
-  const [input, setInput] = useState('');
-  const hendleValue = input => {
-    setInput(input);
-  };
   return (
     <GlobalStyle>
-      <FormaSearch submitInput={hendleValue} />
-      <ImagesInfo resValue={input} />
+      <Header />
+      <Hero />
     </GlobalStyle>
   );
 };
