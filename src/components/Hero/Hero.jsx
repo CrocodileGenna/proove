@@ -5,7 +5,7 @@ export const Hero = () => {
     <HERO>
       <INFO>
         <PHONE>
-          <p>+380 99 000 00 00</p>
+          <p>Зв'яжись з нами: +380 99 000 00 00</p>
         </PHONE>
         <BUTTON>
           <p>Купити рюкзак</p>

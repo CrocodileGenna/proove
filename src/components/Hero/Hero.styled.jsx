@@ -63,4 +63,10 @@ export const BUTTON = styled.button`
   font-family: 'Russo One', sans-serif;
   font-weight: 400;
   font-style: normal;
+  transition: all 0.4s ease;
+
+  :hover,
+  :focus {
+    cursor: pointer;
+  }
 `;

@@ -1,17 +1,16 @@
 import styled from '@emotion/styled';
-import { keyframes } from '@emotion/react';
 
 export const HEADER = styled.header`
   position: relative;
-  display: flex;
   max-width: 100%;
   padding: 10px;
   height: 30px;
-  background-color: #111;
-  color: #fff;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: #000;
+  color: #fff;
+  z-index: 2;
 
   @media (min-width: 768px) {
     padding: 15px;
@@ -71,8 +70,9 @@ export const MENU_BUTTON = styled.span`
 
 export const MENU = styled.div`
   position: absolute;
-  display: ${props => (props.isOpen ? 'flex' : 'none')};
-  top: ${props => (props.isOpen ? '0' : '-150%')};
+  // display: ${props => (props.isOpen ? 'flex' : 'none')};
+  display: flex;
+  top: ${props => (props.isOpen ? '0' : '-500%')};
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -82,36 +82,26 @@ export const MENU = styled.div`
   color: #fff;
   background-color: rgb(0 0 0 / 50%);
   backdrop-filter: blur(4px);
+  transition: all 0.6s ease;
   z-index: 1;
-  animation: ${props => (props.isOpen ? slideDown : slideUp)} 0.7s ease;
-`;
 
-const slideUp = keyframes`
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-150%);
-  }
-`;
-
-const slideDown = keyframes`
-  from {
-    transform: translateY(-150%);
-  }
-  to {
-    transform: translateY(0);
+  @media (min-width: 768px) {
+    padding: 25px;
   }
 `;
 
 export const PHONE = styled.div`
   display: block;
-  margin: 30px 0 10px 0;
+  margin: 40px 0 20px 0;
   font-size: 20px;
   font-family: 'TildaSans', Arial, sans-serif;
+
+  @media (min-width: 768px) {
+    margin: 60px 0 20px 0;
+  }
 `;
 export const BUTTON = styled.button`
-  margin: 10px;
+  margin: 20px 0 20px 0;
   border: none;
   border-radius: 30px;
   height: 40px;
@@ -123,4 +113,10 @@ export const BUTTON = styled.button`
   font-family: 'Russo One', sans-serif;
   font-weight: 400;
   font-style: normal;
+  transition: all 0.4s ease;
+
+  :hover,
+  :focus {
+    cursor: pointer;
+  }
 `;

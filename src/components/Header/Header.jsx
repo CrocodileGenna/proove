@@ -12,7 +12,7 @@ export const Header = () => {
       <MENU_BUTTON onClick={toggleMenu} isOpen={menuOpen}></MENU_BUTTON>
       <MENU isOpen={menuOpen}>
         <PHONE>
-          <p>+380 99 000 00 00</p>
+          <p>Зв'яжись з нами: +380 99 000 00 00</p>
         </PHONE>
         <BUTTON>
           <p>Купити рюкзак</p>
