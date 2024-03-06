@@ -4,18 +4,18 @@ import backgroundImage from './proove_orion_3.png';
 export const HERO = styled.div`
   position: relative;
   width: 100%;
-  height: 270px;
+  height: 320px;
   background-size: cover;
-  // background-position: top;
   background-image: url(${backgroundImage});
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left;
 
   @media (min-width: 468px) {
     height: 370px;
   }
   @media (min-width: 728px) {
     height: 450px;
+    background-position: center center;
   }
   @media (min-width: 988px) {
     height: 570px;

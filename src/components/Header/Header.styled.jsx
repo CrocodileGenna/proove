@@ -92,10 +92,9 @@ export const MENU = styled.div`
 
 export const PHONE = styled.div`
   display: block;
-  margin: 40px 0 20px 0;
-  font-size: 20px;
-  font-family: 'TildaSans', Arial, sans-serif;
-
+  margin: 60px 0 30px 0;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
   @media (min-width: 768px) {
     margin: 60px 0 20px 0;
   }
