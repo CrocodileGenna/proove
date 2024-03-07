@@ -20,24 +20,23 @@ export const IMG = styled.img`
   object-fit: cover;
   border-radius: 5px;
   max-width: 100%;
-  max-height: 100%;
   width: 280px;
-  height: 280px;
+  max-height: 250px;
   @media (min-width: 468px) {
     width: 380px;
-    height: 380px;
+    max-height: 370px;
   }
   @media (min-width: 728px) {
     width: 550px;
-    height: 550px;
+    max-height: 540px;
   }
   @media (min-width: 988px) {
     width: 640px;
-    height: 640px;
+    max-height: 640px;
   }
   @media (min-width: 1208px) {
     width: 720px;
-    height: 720px;
+    max-height: 700px;
   }
 `;
 export const BUTTON = styled.button`
@@ -46,6 +45,10 @@ export const BUTTON = styled.button`
   border-radius: 50%;
   border: none;
   background-color: #fff;
+  :hover,
+  :focus {
+    cursor: pointer;
+  }
   @media (min-width: 728px) {
     margin: 0 10px;
     width: 40px;
